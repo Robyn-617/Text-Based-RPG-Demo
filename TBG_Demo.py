@@ -1,0 +1,97 @@
+# This is a demo for a game I will make... eventually?
+# Anyways, enjoy!
+
+import sys
+
+print("")
+print("")
+print("")
+print("**********************************************************************")
+print("")
+print("Text-Based Game Demo")
+print("")
+print("Helpful Hint: The choices you can make have *asterisks* around them")
+print("")
+print("Made By: Jacob Schick")
+print("")
+print("**********************************************************************")
+print("")
+print("")
+print("")
+
+weapon = "stick"
+armor = "tattered clothes"
+
+print("You wake up. You look around, noticing that you are in a jail cell of some sort.")
+print("Your clothes are ragged, and you are holding a large stick.")
+print("")
+print("What do you do? Do you try to *pick the lock*, or do you *whack the door*")
+breakout = input()
+if (breakout == "pick the lock"):
+	print("")
+	print("Miraculously, the lock decides to open. Talk about deus ex machina.")
+	print("")
+elif (breakout == "whack the door"):
+	print("")
+	print("The stick snaps in half and clatters to the floor. Good going, idiot.")
+	print("")
+	print("YOU DIED")
+	# Stops the script
+	sys.exit()
+print("Next, you come to a hallway. To the left, there is a large square hole, and to the right, is a room with guards.")
+print("")
+print("Do you turn *left*, or do you turn *right*?")
+prisonTurn01 = input()
+if (prisonTurn01 == "left"):
+	print("")
+	print("You jump down the hole, not realising that it is a garbage incinerator.")
+	print("")
+	print("You die an agonizing death, burning until your body becomes soot")
+	print("")
+	print("YOU DIED")
+	sys.exit()
+elif (prisonTurn01 == "right"):
+	print("")
+	print("You turn right, into the room with guards. They notice you.")
+	print("")
+	print("\"Hey! Get him!\"")
+print("")
+print("They've noticed you. What do you do? Do you *fight*, or *flee*?")
+fightOrFlight = input()
+if (fightOrFlight == "fight"):
+	print("")
+	print("You whack them all on the head with your stick, and they all pass out.")
+	print("")
+elif (fightOrFlight == "flee"):
+	print("")
+	print("You back away, tripping into the hole. You realize that it is an incinerator.")
+	print("It slowly burns you to a crisp. Hopefully someone around here finds your ashes.")
+	print("")
+	print("YOU DIED")
+	sys.exit()
+print("You come to the next room, with a very swole guard standing at the exit.")
+print("")
+print("Do you *whack him*, or do you use some *smooth moves*?")
+whackOrDance = input()
+if (whackOrDance == "whack him"):
+	print("")
+	print("You hit him. He barely moves. Then he crushes your skull.")
+	print("")
+	print("YOU DIED")
+	sys.exit()
+elif (whackOrDance == "smooth moves"):
+	print("")
+	print("You do a dance that is somewhere between the chicken dance and the hokey pokey.")
+	print("The guard falls over, laughing his head off.")
+	print("")
+print("You finally made it through! Also the guard dropped his gun. You take it.")
+print("")
+print("Obtained \"Pistol\"")
+print("")
+print("")
+print("")
+print("**********************************************************************")
+print("")
+print("This is the end of the demo. I'll be making a full version soon!")
+print("")
+print("**********************************************************************")
